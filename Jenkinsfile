@@ -27,10 +27,7 @@ pipeline {
 
                     bat 'echo %DOCKER_PASSWORD% | docker login -u %DOCKER_USERNAME% --password-stdin'
 
-                    bat 'docker tag practiceautomation %DOCKER_USERNAME%/practiceautomation:latest'
-
-                    bat 'docker push %DOCKER_USERNAME%/practiceautomation:latest'
-                }
+                                    }
             }
         }
 
